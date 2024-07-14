@@ -16,3 +16,53 @@ So fill your mysteries directory with mysteries appropriate to your game and the
 > python mystery.py
 
 Enjoy.
+
+# Using this system
+
+So the system should be usable anytime you need an oracle that reveals related information in order. However as written it will work with the Solo rules for Vaesen. Buy those rules and the core book from Free League. The core book is excellent. In the solo rules replace the rolling for clues and learning with the clue command in the script. Each mystery has a different number of clues, so you may run out. There is also a twist which I recommend revealing somewhere late in the game, if desired. The Solo rule set had some good ideas but it just sort of ended a bit early. It gives no advice on how the player learns about the monster weakness or how the confrontation takes place. It also talks up the importance of time but then gives no mechanism for what effect time has, like a threat countdown or something. I would also have liked a few more play examples.
+
+# Some Thoughts
+
+Nothing about what follows is really relevant to running the script. Just the ramblings of a madman.
+
+So I wrote the code in this repo in about an hour. I may enhance it a bit but it represents many hours of pondering a problem. 
+
+How can I play a mystery in a solo TTRPG and have a satisfying experience? 
+
+Close to this problem are the related questions:
+
+- Why is running a mystery in a TTRPG difficult in a normal group setting?
+- How can prewritten adventure modules be run solo in a satisfying way?
+
+## Two Types of Mystery Systems
+The two types of mystery systems are emergent and determinative. In an emergent system no one knows the details or solution to the mystery including the GM. It simply emerges during play. Brindlewood Bay is probably the leading example of this. The problem is how do you make a meaningful clue when you don’t know what it is a clue to? 
+
+In a determinative system the GM has planned a solution and usually worked backwards from there to decide clues that should lead his players to that solution like a train on a track. The problem there is what if the players miss the clue, misinterpret the clue, or strike out in an unplanned direction? The Gumshoe system addressed this by not having clues gated by roll success. The famous Three Clue Rule from the Alexandrian says to overcome this by planting any essential clues in three places so they will find them somewhere. Neither approach is great but illustrates the problem with mysteries in general. They rely on heavy scripting which is not typical of TTRPG.
+
+My experience has been that emergent systems have been unsatisfying because it does not feel like a clever orchestrated puzzle to uncover, mostly because it isn’t. The determinative model has largely not been possible for solo because it requires a GM that has knowledge of the solution to be coy and dribble out bits of data for you to puzzle together, holding back if you are getting too close too fast and giving you more when you get stuck, and all the while hoping you don’t do something unplanned. This can be done in group play but it takes a great GM and players who are willing to work to follow the preplanned course. It is one of the hardest things to pull off and is very taxing on the GM.
+
+For this reason mystery settings are more geared to board games than RPGs. The popular murder dinner party games which is basically a guided system of social deduction lies in the middle ground, but these usually take a pretty silly approach. There are a number of rather well regarded board games including solo games that capture the deductive process quite well, but they follow rigid rules and have little or no roleplay aspects. Just mechanisms for uncovering data to lead to a conclusion, so there is no possibility to go into an unexpected path.
+
+This brings me to musing on what we expect and want out of a mystery. For many, myself included, as I read a mystery, or occasionally as I watch a mystery, I am trying to beat the main character or at least keep up with him. Can I spot the clues and discover the bad guy before the big reveal. Sometimes I can, often I can’t, but the fun is often in the trying. The payoff and the love for the character is often how they pulled together data that was right there in front of you in ways that seem obvious and important but that you entirely overlooked during the exposition of the story. That’s a really hard thing to capture.
+
+For others, they are happy to watch much more passively and do not try to solve the mystery as it progresses. These folks might find an emergent system more satisfying. These systems simulate the process of a mystery rather than the skill of detective work. In many ways this makes a lot of sense. I can’t really toss fireballs and I am mediocre with a battle ax. The purpose of these games is to play a character who does what you are not actually capable of doing. Why would detective work be different? Just like your barbarian smashes through the wall based on a dice roll, your detective puts together the puzzle in the same way, even though you personally can’t. 
+
+So these games break down a mystery into its parts:
+- Opening misdeed/unknown
+- Gathering evidence
+- Formulating a theory
+- Testing its truth/confronting the bad guy
+
+By nature a mystery is very episodic. It is easy to simulate each of the expected steps and determine the success and failure based on dice rolls. The unsatisfying part is it is very hard to describe them adequately. A fight, win or lose, is pretty easy to describe, but finding clues and how those clues fit together and make only one solution possible is quite hard unless you start with the solution and work backwards.  So with an emergent system you must accept your clues and your solution are only loosely related. You get your enjoyment from watching the process play out and just handwave how anyone could reach that conclusion from those clues.
+
+Depending on the quality of the writing, sometimes determinative approaches can also be unsatisfying if the clues are not really enough to reach the conclusion, but assuming good writing, the conclusion is a matter of actual deduction rather than a dice roll. It was with this in mind I wrote this script. If you can put together enough mysteries that all have good clues tied to the solution and reveal them in the right order you can simulate this actual deduction process. This is something you can’t do with normal oracles and something that doesn’t work if your selection of mysteries is too small to where you instantly recognise the solution from the first clue. Having someone else write them and avoiding reading them also helps (this is where AI can come in). But it is also hard to have the clues line up with what is happening at that moment in the story and there is no way to adjust the amount of information they convey.
+
+So it’s still far from perfect and I am thinking about ways an AI could help with some judgment about how the clues are revealed. I am also thinking I should work in some type of threat countdown like Monster of the Week. This goes back to my question about how do you run a prewritten module in a satisfying way. If I could determine a way to break it down into a particular format and have a script feed it out in a sensible way I might be there. Until then I will probably sticking to sandbox style play as most solo players do.
+
+
+
+
+
+ 
+
+
